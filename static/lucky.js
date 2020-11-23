@@ -32,16 +32,16 @@ function handleResponse(resp) {
 
     if (resp.status == 200) {
 
-        const text = `Your lucky number is ${resp.data.num.num}. ${resp.data.num.fact}. Your birth year 
-        (${resp.data.year.year}) fact is: ${resp.data.year.fact}`
+        const text = `Your lucky number is ${resp.data.num.num}. ${resp.data.num.fact}. Your birth year (${resp.data.year.year}) fact is: ${resp.data.year.fact}`
     
         newDiv = document.createElement('div')
         newDiv.innerText = text
     
         $("#lucky-results").append(newDiv)
+
     } else if (resp.status == 400) {
 
-        console.log(resp.data)
+        console.log(resp)
 
     }
 }
