@@ -1,0 +1,22 @@
+body {
+    background: url(pattern.svg);
+}
+
+form {
+    color: #28a745;
+    font-weight: 800;
+    background-color: white;
+}
+
+h1 {
+    color: #28a745;
+    background-color: white;
+}
+
+.result {
+    background-color: white;
+}
+
+.err {
+    color: #ac56cc;
+}

@@ -48,7 +48,7 @@ def api():
                             }}
 
         return (jsonify(response_dict), 200)
-        
+
     else: 
         response = {
             "errors": form.errors

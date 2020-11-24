@@ -3,18 +3,25 @@
 <head>
   <title>LuckyNum</title>
   <script src="https://unpkg.com/jquery"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+<div class="container">
+  <h1 class="display-1 text-center">Lucky Number</h1>
+  <form id="lucky-form">
+    <div>Name: <input class='form-control' id="name"> <b id="name-err" class='err'></b> </div>
+    <div>Birth Year: <input placeholder='must be between 1900-2000'class='form-control' id="year"> <b id="year-err" class='err'></b> </div>
+    <div>Email: <input class='form-control' id="email"> <b id="email-err" class='err'></b> </div>
+    <div>Favourite Color: <input placeholder='choose from blue, red, green or orange' class='form-control' id="color"> <b id="color-err" class='err'></b> </div>
+    <button class='btn btn-success mt-4 mb-4 btn-block btn-lg'>I Want To Feel Lucky!</button>
+  </form>
+  
+  <div id="lucky-results"></div>
 
-<form id="lucky-form">
-  <div>Name: <input id="name"> <b id="name-err"></b> </div>
-  <div>Birth Year: <input id="year"> <b id="year-err"></b> </div>
-  <div>Email: <input id="email"> <b id="email-err"></b> </div>
-  <div>Color: <input id="color"> <b id="color-err"></b> </div>
-  <button>I Want To Feel Lucky!</button>
-</form>
+</div>
 
-<div id="lucky-results"></div>
+
 
 <script src="https://unpkg.com/axios/dist/axios.js"></script>
 <script src="/static/lucky.js"></script>
